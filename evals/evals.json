@@ -1,0 +1,57 @@
+{
+  "skill_name": "competitive-teardown",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Can you do a competitive teardown of Notion vs. our product? We make Taskflow — a project management tool for software engineering teams. We're strong on Jira-style issue tracking and sprint planning but don't have a knowledge base or docs product. We're trying to decide whether to build a lightweight docs/wiki feature to compete with Notion's engineering team use case, or double down on our core project management strengths. Here are some G2 reviews of Notion and their website positioning:\n\nNotion Website copy:\n'The connected workspace where better work happens. Write, plan, share — all in one tool. Thousands of engineering teams use Notion for their engineering wiki, project specs, and meeting notes.'\n\nNotion G2 Reviews (sample of 10):\n1. ★★★★★ 'Notion is our single source of truth. We use it for our eng wiki, project planning docs, and onboarding materials. The flexibility is unmatched.'\n2. ★★★★☆ 'Great for documentation and wikis. Not great for actual task management — the kanban and sprint views feel like an afterthought.'\n3. ★★★★☆ 'We use Notion for docs and Linear for actual project tracking. They serve different needs.'\n4. ★★★☆☆ 'The database views are powerful but complex. New engineers on our team always struggle to figure out how things are organized.'\n5. ★★★☆☆ 'Too slow when the workspace gets large. Search is unreliable. We have 3 years of content and can't find anything.'\n6. ★★★★★ 'Perfect for our startup. One tool for everything — wiki, roadmap, meeting notes, project specs.'\n7. ★★☆☆☆ 'We migrated away after 18 months. The block editor is great but it became a mess. No real structure enforced, so everyone organized things differently.'\n8. ★★★★☆ 'The AI features are impressive for drafting docs. Not useful for tracking work though.'\n9. ★★★☆☆ 'Offline mode is unreliable. This burned us twice in important meetings.'\n10. ★★★★★ 'Engineering teams that want everything in one place will love it. Teams that need rigorous project tracking should use something else.'",
+      "expected_output": "Full teardown including capabilities analysis, positioning analysis, customer sentiment with frequency counts, competitive matrix, gap analysis (what Notion does Taskflow doesn't, what Taskflow does Notion doesn't, the real gap), and strategic implications specifically addressing the build vs. double-down decision.",
+      "files": [],
+      "expectations": [
+        "Capabilities analysis is grounded in the reviews and website copy — no invented features",
+        "Positioning analysis quotes Notion's actual language ('connected workspace', 'single source of truth')",
+        "Customer sentiment section has frequency counts (e.g., 'X of 10 reviews mentioned task management weakness')",
+        "The task management weakness (reviews 2, 3, 10) is called out as a pattern — not buried",
+        "The organizational chaos / no-enforced-structure issue (reviews 4, 7) is called out as a sentiment pattern",
+        "Competitive matrix covers at minimum: project/task management, documentation, search, AI features",
+        "Gap analysis addresses what Notion does that Taskflow doesn't (docs, wiki, flexibility) and vice versa (sprint planning, issue tracking)",
+        "Strategic implications directly address the build-vs-double-down question rather than giving generic advice",
+        "Offer for deeper dives is made at the end"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I need a competitive teardown of Intercom for our customer support product. We're HelpDesk Pro — a B2B customer support platform used by mid-market SaaS companies. We're strong on ticket routing, SLA management, and reporting. Our weakness is our chat/messenger product, which customers say feels dated. The decision: should we invest heavily in modernizing our messenger, or is Intercom winning on dimensions we can actually compete on? Here's what I have:\n\nIntercom Pricing Page (paraphrased):\n- Starter: $74/mo — email, chat, basic automation\n- Pro: $374/mo — full inbox, workflows, reporting\n- Premium: Custom — AI agent (Fin), advanced automation, enterprise security\n- AI Agent (Fin) is prominently featured — 'resolve 50% of support volume automatically'\n\nIntercom Feature Announcement (from their blog, paraphrased):\n'Fin AI Agent can now handle complex multi-step resolutions — not just simple FAQs. It reads your help center, your past tickets, and your product docs to give customers answers that used to require a human. Teams using Fin report a 45% reduction in first-response tickets.'\n\nUser interview quotes (from our own customer research — 3 customers mentioned Intercom):\n- Customer A (churned to Intercom 6 months ago): 'The messenger was the thing. Our customers expect a modern chat experience and HelpDesk Pro felt like 2015. We didn't actually need Fin — we just needed something that didn't look embarrassing.'\n- Customer B (stayed with us, evaluated Intercom): 'Intercom was prettier but the SLA management and reporting were much weaker. We couldn't get the data we needed to manage our team. We stayed.'\n- Customer C (new customer, came from Intercom): 'Intercom got too expensive when we scaled. At 3 enterprise accounts paying $374/mo each, it adds up. Your pricing made more sense for our volume.'",
+      "expected_output": "Full teardown that surfaces the AI agent as a meaningful capability gap, addresses the messenger modernization question directly, and uses the three customer quotes as primary evidence for the gap analysis. Strategic implications should give a clear directional answer on the build question.",
+      "files": [],
+      "expectations": [
+        "Capabilities analysis covers: AI agent (Fin), messenger/chat, pricing model, ticket management",
+        "Positioning analysis notes Intercom's pivot toward AI-first support automation",
+        "Customer sentiment section uses all three interview quotes as primary evidence with proper attribution",
+        "Customer A's quote ('felt like 2015') is treated as strong evidence that the messenger gap is a real churn driver",
+        "Customer B's quote is treated as evidence that our SLA/reporting strength is a genuine differentiator",
+        "Customer C's quote surfaces a pricing advantage we have at scale",
+        "The gap analysis distinguishes between the messenger gap (real, causing churn) and the AI agent gap (real, but not yet the primary churn driver per evidence)",
+        "Strategic implications give a directional answer on modernizing messenger vs. doubling down on SLA/reporting",
+        "The confidence levels are used appropriately — some claims are High confidence (multiple sources), others are Medium or Low",
+        "Offer for deeper dives is made"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Do a teardown of Monday.com for our product. We make Asana. Decision context: Monday.com keeps winning deals in the mid-market (100–500 employee companies) and we're losing more than we should in that segment. I want to understand where they're actually beating us and where we can push back harder in sales. Here's what I have — it's a mix of their website and some G2 reviews.\n\nMonday.com Website:\n'A platform built for the way teams actually work. No two teams are the same — Monday.com adapts to your workflow, not the other way around. Loved by marketing, ops, sales, and engineering teams alike. Start in minutes, customize everything.'\n\nG2 Reviews of Monday.com (sample of 8):\n1. ★★★★★ 'The most flexible tool I've used. We built our entire sales pipeline, project tracker, and client portal in Monday. No code needed.'\n2. ★★★★☆ 'Genuinely easy to get started. We had our whole team onboarded in a day — no training required.'\n3. ★★★★★ 'The automations are so easy to set up compared to competitors. Drag and drop, done.'\n4. ★★★☆☆ 'Gets expensive fast when your team grows. The per-seat pricing caught us off guard.'\n5. ★★★★☆ 'Beautiful dashboards. Leadership loves the reporting. Not as deep as dedicated BI tools but great for team-level visibility.'\n6. ★★☆☆☆ 'We outgrew it. The flexibility is great early on but when you need real project management structure — dependencies, critical path, resource management — it falls short.'\n7. ★★★☆☆ 'Support is slow and the documentation is inconsistent. Hard to find answers when something breaks.'\n8. ★★★★★ 'The CRM features surprised me — we use Monday as a lightweight CRM for our sales team AND for project delivery. One less tool.'",
+      "expected_output": "Full teardown where the gap analysis and strategic implications are focused on the specific sales context (mid-market deals, 100–500 employees). The teardown should help Asana push back in sales situations, not just describe Monday.com's features.",
+      "files": [],
+      "expectations": [
+        "Capabilities analysis covers: flexibility/customization, onboarding speed, automations, dashboards/reporting, CRM/multi-use-case, project management depth",
+        "Positioning analysis identifies Monday's 'adapts to your workflow' as a direct counter to structured PM tools",
+        "Customer sentiment captures: ease of onboarding (positive signal), flexibility (positive), pricing surprise at scale (negative), structural PM limitations (negative)",
+        "Review 6 is treated as a meaningful signal — it identifies a real weakness in Monday's depth for mature PM needs",
+        "Review 8 is treated as a signal that Monday's multi-use-case positioning is landing with certain buyers",
+        "The gap analysis distinguishes where Monday wins (flexibility, onboarding, automation ease) from where Asana wins (project management structure, dependencies, resource management)",
+        "Strategic implications include specific sales talking points for the mid-market segment",
+        "The pricing signal (review 4) is surfaced as a potential sales angle for larger mid-market teams",
+        "Offer for deeper dives is made"
+      ]
+    }
+  ]
+}
